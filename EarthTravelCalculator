@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class EarthTravelCalculator {
+    public static void main(String[] args) {
+        // Constants
+        double equatorCircumferenceKm = 40075.0; // Earth's equatorial circumference in kilometers
+
+        // Input from the user
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the total distance you have traveled in kilometers: ");
+        double distanceTraveled = scanner.nextDouble();
+
+        // Calculate the number of times around the Earth
+        double timesAroundEarth = distanceTraveled / equatorCircumferenceKm;
+
+        // Display the result
+        System.out.println("You could have traveled around the Earth on the equator approximately " +
+                timesAroundEarth + " times.");
+
+        // Close the scanner
+        scanner.close();
+    }
+}
